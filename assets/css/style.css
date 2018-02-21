@@ -8,6 +8,7 @@
     text-align: center;
     padding: 20px;
     border-top: 10px solid #4aaaa5;
+    z-index: 100;
 }
 
 header {
@@ -41,6 +42,7 @@ header {
     top: 0;
     width: 100%;
     align-content: center;
+    z-index: 100;
 }
 
 ul {
@@ -130,6 +132,7 @@ p {
 }
 .navbar-default {
     background-color: #ffffff;
+    z-index: 100;
 }
 .button {
     Background-color: #4aaaa5;
@@ -146,4 +149,35 @@ p {
 }
 .text {
     height: 30px;
+}
+
+.image-container {
+    float: left;
+    width: 320px;
+    height: 218px;
+    overflow: hidden;
+    position: relative; 
+    z-index: 2;
+}
+
+.image-inner-container {
+    position: absolute;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    text-align: center;
+    width: 81%;
+    left: 15.5px;
+    margin: 50% 0 0 0;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-size: 30px;
+    font-style: bold;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0.9;
+    z-index: 2;
 }
